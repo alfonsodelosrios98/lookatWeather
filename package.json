@@ -1,15 +1,14 @@
 {
   "name": "boilerplate",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple react app",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    
+    "start": "node server.js"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "alfonsodelosrios",
+  "license": "MIT",
   "dependencies": {
     "axios": "^0.16.1",
     "express": "^4.15.3",
