@@ -8,12 +8,12 @@ module.exports = {
 
     return axios.get(requestUrl).then(function(res) {
       if(res.data.cod && res.data.message) {
-        throw new Error(res.data.message);
+        throw new Error('We were unable to process your request.');
       } else {
         return res.data.main.temp;
       }
     }, function (res) {
-      throw new Error(res.data.message);
+      throw new Error('We were unable to process your request.');
     });
   }
 }
