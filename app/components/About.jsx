@@ -2,8 +2,8 @@ var React = require('react');
 
 var About = (props) => {
   return (
-    <div>
-      <h3 className="text-center">About</h3>
+    <div className="inner-section">
+      <h1 className="text-center">About</h1>
       <p>This is a weather app built in react. Developed by lookat programming team on 2017.</p>
       <p>Built on June 2017, lookatWeather is built with different components:</p>
       <ol>

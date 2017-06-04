@@ -107,10 +107,11 @@
 	var Weather = __webpack_require__(354);
 	var About = __webpack_require__(388);
 	var Examples = __webpack_require__(389);
-
 	//Load foundation-sites
 	__webpack_require__(390);
 	$(document).foundation();
+
+	__webpack_require__(396);
 
 	ReactDOM.render(React.createElement(
 	  Router,
@@ -43228,7 +43229,7 @@
 
 	    return React.createElement(
 	      'div',
-	      null,
+	      { className: 'inner-section' },
 	      React.createElement(
 	        'h1',
 	        { className: 'text-center' },
@@ -46925,9 +46926,9 @@
 	var About = function About(props) {
 	  return React.createElement(
 	    "div",
-	    null,
+	    { className: "inner-section" },
 	    React.createElement(
-	      "h3",
+	      "h1",
 	      { className: "text-center" },
 	      "About"
 	    ),
@@ -46994,7 +46995,7 @@
 	var Examples = function Examples(props) {
 	  return React.createElement(
 	    'div',
-	    null,
+	    { className: 'inner-section' },
 	    React.createElement(
 	      'h1',
 	      { className: 'text-center' },
@@ -47380,6 +47381,48 @@
 		if(oldSrc)
 			URL.revokeObjectURL(oldSrc);
 	}
+
+
+/***/ }),
+/* 394 */,
+/* 395 */,
+/* 396 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(397);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(393)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!../../node_modules/css-loader/index.js!./lookatStyles.css", function() {
+				var newContent = require("!!../../node_modules/css-loader/index.js!./lookatStyles.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ }),
+/* 397 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(392)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".inner-section {\n  padding: 20px 15px;\n  margin-top: 2.5rem;\n}\n\ninput[type=search] {\n  box-shadow: none;\n}\np {\n  color: #8C8C8C;\n}\nh1 {\n  color: #262726;\n  font-weight: bold;\n}\n", ""]);
+
+	// exports
 
 
 /***/ })
