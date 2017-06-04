@@ -24924,11 +24924,14 @@
 	    null,
 	    React.createElement(Nav, null),
 	    React.createElement(
-	      'h2',
-	      null,
-	      'Main Component'
-	    ),
-	    props.children
+	      'div',
+	      { className: 'row' },
+	      React.createElement(
+	        'div',
+	        { className: 'columns medium-6 large-4 small-centered' },
+	        props.children
+	      )
+	    )
 	  );
 	};
 
@@ -46840,15 +46843,63 @@
 /* 387 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	var React = __webpack_require__(8);
 
 	var About = function About(props) {
 	  return React.createElement(
-	    'h3',
+	    "div",
 	    null,
-	    'About'
+	    React.createElement(
+	      "h3",
+	      { className: "text-center" },
+	      "About"
+	    ),
+	    React.createElement(
+	      "p",
+	      null,
+	      "This is a weather app built in react. Developed by lookat programming team on 2017."
+	    ),
+	    React.createElement(
+	      "p",
+	      null,
+	      "Built on June 2017, lookatWeather is built with different components:"
+	    ),
+	    React.createElement(
+	      "ol",
+	      null,
+	      React.createElement(
+	        "li",
+	        null,
+	        React.createElement(
+	          "a",
+	          { href: "https://facebook.github.io/react/" },
+	          " React-Web "
+	        ),
+	        " - This is the JS Framework for rendering."
+	      ),
+	      React.createElement(
+	        "li",
+	        null,
+	        React.createElement(
+	          "a",
+	          { href: "http://foundation.zurb.com" },
+	          " Foundation Templates "
+	        ),
+	        " - This is a framework for styling the page."
+	      ),
+	      React.createElement(
+	        "li",
+	        null,
+	        React.createElement(
+	          "a",
+	          { href: "openweathermap.org" },
+	          " Open Weather Map "
+	        ),
+	        " - Data API Provider."
+	      )
+	    )
 	  );
 	};
 
@@ -46862,19 +46913,44 @@
 
 	var React = __webpack_require__(8);
 
+	var _require = __webpack_require__(166),
+	    Link = _require.Link;
+
 	var Examples = function Examples(props) {
 	  return React.createElement(
 	    'div',
 	    null,
 	    React.createElement(
 	      'h1',
-	      null,
-	      ' EXAMPLES!'
+	      { className: 'text-center' },
+	      ' Don\'t know how to search?'
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
-	      'Welcome to examples page!'
+	      'Here are a few examples to try out'
+	    ),
+	    React.createElement(
+	      'ol',
+	      null,
+	      React.createElement(
+	        'li',
+	        null,
+	        React.createElement(
+	          Link,
+	          { to: '/?location=Monterrey' },
+	          'Monterrey, MX'
+	        )
+	      ),
+	      React.createElement(
+	        'li',
+	        null,
+	        React.createElement(
+	          Link,
+	          { to: '/?location=Guadalajara' },
+	          'Guadalajara, MX'
+	        )
+	      )
 	    )
 	  );
 	};
