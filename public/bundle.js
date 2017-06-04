@@ -43209,7 +43209,7 @@
 	      if (isLoading) {
 	        return React.createElement(
 	          'h3',
-	          null,
+	          { className: 'text-center' },
 	          'Fetching Weather...'
 	        );
 	      } else if (temp && location) {
@@ -43220,6 +43220,11 @@
 	    return React.createElement(
 	      'div',
 	      null,
+	      React.createElement(
+	        'h1',
+	        { className: 'text-center' },
+	        ' Fetch Weather'
+	      ),
 	      React.createElement(WeatherForm, { onSearch: this.handleSearch }),
 	      renderMessage()
 	    );
@@ -43253,10 +43258,10 @@
 	    return React.createElement(
 	      'form',
 	      { onSubmit: this.onFormSubmit },
-	      React.createElement('input', { placeholder: 'Enter city name', ref: 'location' }),
+	      React.createElement('input', { type: 'text', placeholder: 'Enter city name', ref: 'location' }),
 	      React.createElement(
 	        'button',
-	        { type: 'submit' },
+	        { className: 'hollow button success expanded', type: 'submit' },
 	        'Get Weather'
 	      )
 	    );
@@ -43269,7 +43274,7 @@
 /* 356 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	var React = __webpack_require__(224);
 
@@ -43279,11 +43284,11 @@
 
 
 	  return React.createElement(
-	    'h3',
-	    null,
-	    ' It is ',
+	    "h3",
+	    { className: "text-center" },
+	    " It is ",
 	    temp,
-	    ' in ',
+	    " in ",
 	    location
 	  );
 	};
