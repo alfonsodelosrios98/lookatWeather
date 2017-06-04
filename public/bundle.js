@@ -111,7 +111,7 @@
 	__webpack_require__(390);
 	$(document).foundation();
 
-	__webpack_require__(396);
+	__webpack_require__(394);
 
 	ReactDOM.render(React.createElement(
 	  Router,
@@ -47384,15 +47384,13 @@
 
 
 /***/ }),
-/* 394 */,
-/* 395 */,
-/* 396 */
+/* 394 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(397);
+	var content = __webpack_require__(395);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(393)(content, {});
@@ -47401,8 +47399,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../../node_modules/css-loader/index.js!./lookatStyles.css", function() {
-				var newContent = require("!!../../node_modules/css-loader/index.js!./lookatStyles.css");
+			module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/sass-loader/index.js!./lookatStyles.scss", function() {
+				var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/sass-loader/index.js!./lookatStyles.scss");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -47412,7 +47410,7 @@
 	}
 
 /***/ }),
-/* 397 */
+/* 395 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(392)();
@@ -47420,7 +47418,7 @@
 
 
 	// module
-	exports.push([module.id, ".inner-section {\n  padding: 20px 15px;\n  margin-top: 2.5rem;\n}\n\ninput[type=search] {\n  box-shadow: none;\n}\np {\n  color: #8C8C8C;\n}\nh1 {\n  color: #262726;\n  font-weight: bold;\n}\n", ""]);
+	exports.push([module.id, ".inner-section {\n  padding: 20px 15px;\n  margin-top: 20px; }\n\ninput[type=search] {\n  box-shadow: none; }\n\np {\n  color: #8C8C8C; }\n\nh1 {\n  color: #931C0A;\n  font-weight: bold; }\n", ""]);
 
 	// exports
 
